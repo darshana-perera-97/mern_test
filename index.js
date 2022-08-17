@@ -19,6 +19,10 @@ const itemSchema = {
 const Item = mongoose.model("Item", itemSchema);
 
 //read
+app.get("/items",(req,res)=>{
+  Item.find().then((items)=>res.json(items)).catch((err)=>res.status(400).json("Error : "+ err))
+})
+
 
 //create
 
