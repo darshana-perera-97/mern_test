@@ -10,11 +10,13 @@ mongoose.connect(
 );
 
 //data schema
-
 const itemSchema = {
   title: String,
   description: String,
 };
+
+//data model
+const Item = mongoose.model("Item", itemSchema);
 
 //read
 
