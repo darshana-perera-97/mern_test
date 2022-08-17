@@ -18,4 +18,6 @@ const port = 3001;
 
 //update route
 
-
+app.listen(port, function () {
+  console.log("Express running");
+});
